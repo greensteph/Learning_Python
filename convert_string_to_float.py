@@ -1,7 +1,10 @@
 # Write a function that converts a string to a float and returns the result.
 
 def string_to_float(str):
-    turkey_leg = float(str)
-    print(turkey_leg)
+    try:
+        return float(str)
+    except ValueError:
+        print("Could not make conversion.")
 
-string_to_float(12)
+c = string_to_float("ham")
+print(c)

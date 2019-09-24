@@ -1,4 +1,10 @@
 def my_int_one(x):
-    print(x / 2)
+    return(x / 2)
 
-my_int_one(6)
+first_result = my_int_one(6)
+
+def my_int_two(x):
+    return(x * 4)
+
+second_result = my_int_two(first_result)
+print(second_result)
